@@ -56,8 +56,53 @@
        }
 
        .jumbo-headline {
-           background-color: rgba(78, 78, 78, 0.75);
+           background-color: rgba(48, 48, 48, 0.80);
        }
+
+       .logo-of-city {
+           width: 104px;
+           height: 100%;
+       }
+
+       .bigger-logo {
+           width: 124px;
+           height: 100%;
+       }
+
+       @media screen and (min-width: 768px){
+        .logo-of-city{
+            width: 100px;
+            height: 100%;
+        }
+        .bigger-logo {
+            width: 124px;
+            height: 100%;
+        }
+
+        .jumbo-headline {
+            margin: 40px auto !important;
+
+        }
+
+       }
+
+       @media screen and (min-width: 0px) and (max-width: 768px) {
+        .logo-of-city{
+            width: 40px;
+            height: 100%;
+        }
+        .bigger-logo {
+            width: 54px;
+            height: 100%;
+        }
+
+        .jumbo-headline {
+            margin: 40px auto !important;
+
+        }
+       }
+
+       
 
     </style>
   </head>
@@ -91,8 +136,8 @@
     <!-- NavBar END -->
 
     <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid main-back d-flex align-items-center m-0" style="background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05), rgba(46, 46, 46, 0.33)),url('./imgs/background/stock-photo-los-angeles-california-usa-july-new-construction-modern-home-interior-with-model-682299184.jpg'); background-repeat: no-repeat; background-position: center; width:100%; background-size: cover; ">
-        <div class="jumbo-headline ml-3 ml-md-4 ml-lg-5 pl-4 pl-lg-4 mb-4 pb-4 pt-4 pr-4 border" style="margin-top: -30px;">
+    <div class="jumbotron jumbotron-fluid main-back d-flex align-items-center m-0" style="background-image: url('./imgs/background/stock-photo-los-angeles-california-usa-july-new-construction-modern-home-interior-with-model-682299184.jpg'); background-repeat: no-repeat; background-position: center; width:100%; background-size: cover; ">
+        <div class="jumbo-headline ml-3 ml-md-4 ml-lg-5 pl-4 pl-lg-4 mb-4 pb-4 pt-4 pr-4 border text-center">
             <p class="lead text-white">
                 Legalize Your Basement.
             </p>
@@ -106,14 +151,14 @@
     <div class="container-fluid">
         <div class="row city-banner border-bottom">
             <div class=" col-12 col-md-11 col-xl-9 mx-auto">
-            <div id="services"class="city-logos-area d-flex align-items-center justify-content-around">
-                <div class="city-logo"><img style="width: 104px; height: 100%;" src="./imgs/2x/Brampton.png"></div>
-                <div class="city-logo"><img style="width: 104px; height: 100%;" src="./imgs/2x/Mississauga.png" alt=""></div>
-                <div class="city-logo"><img style="width: 124px; height: 100%;" src="./imgs/2x/Vaughan.png" alt=""></div>
-                <div class="city-logo"><img style="width: 104px; height: 100%;" src="./imgs/2x/Halton-Region.png" alt=""></div>
-                <div class="city-logo"><img style="width: 104px; height: 100%;" src="./imgs/2x/Toronto.png" alt=""></div>
+            <div id="services" class="row city-logos-area d-flex align-items-center justify-content-around">
+                <div class="col-2 city-logo"><img class="logo-of-city" src="./imgs/2x/Brampton.png"></div>
+                <div class="col-2 city-logo"><img class="logo-of-city" src="./imgs/2x/Mississauga.png" alt=""></div>
+                <div class="col-2 city-logo"><img class="bigger-logo"  src="./imgs/2x/Vaughan.png" alt=""></div>
+                <div class="col-2 city-logo"><img class="logo-of-city" src="./imgs/2x/Halton-Region.png" alt=""></div>
+                <div class="col-2 city-logo"><img class="logo-of-city" src="./imgs/2x/Toronto.png" alt=""></div>
             </div> 
-        </div >
+        </div>
      </div>   
      <!-- City Banner END -->
      <!-- Services  -->
@@ -163,11 +208,11 @@
              </div>
          </div> -->
      </div>
-
+     </div>
      <!-- Services END -->
      <!-- Contact Us -->
 
-    
+    <div class="container-fluid"></div>
     <div id="contact" class="container-fluid bg-light border-top border-bottom" style="margin-top: 200px;">
         <div class="row main-header" >
             <div class="col-12 d-flex align-items-center justify-content-center"  style="margin-top: 14px;">
